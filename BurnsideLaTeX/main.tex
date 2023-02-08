@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{amsfonts}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[labelfont=bf]{caption}
+\graphicspath{{images/}{{\subfix{images/}}}}
+\usepackage{setspace}
+\usepackage{wrapfig}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\renewcommand{\baselinestretch}{1.7}
+\usepackage{subfiles}
+\usepackage{subfig}
+\usepackage{subcaption}
+
+\titleformat{\section}[display]
+  {\normalfont\filcenter\bfseries}{}{12pt}{}
+%\titleformat{\subsection}[display]
+%  {\normalfont}{}{1pt}{}
+
+%\setlength{\parindent}{0pt}
+
+\title{4310 Final}
+\author{Ben Drummond}
+\date{April 2021}
+
+\begin{document}
+    
+    \subfile{sections/Title_Page}
+
+    \section*{Introduction}
+    \subfile{sections/Introduction}
+    
+%    \section*{Notation and Definitions}
+%    \subfile{sections/Notation}
+    
+    \section*{The Orbit-Stabilizer Theorem}
+    \subfile{sections/Orbit_Stabilizer}
+    
+    \section*{Proof of Burnside's Lemma}
+    \subfile{sections/Proof}
+    
+    \section*{Examples}
+    \subfile{sections/Examples}
+    
+    \bibliographystyle{alpha}
+    \clearpage
+    \bibliography{mybibliography}
+
+\end{document}
+https://www.overleaf.com/project/607ca9e25e36f172ffe7af5d

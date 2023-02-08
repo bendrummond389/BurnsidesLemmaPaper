@@ -1,0 +1,50 @@
+\documentclass[../main.tex]{subfiles}
+\setlength{\parskip}{1.5em}
+
+\begin{document}
+    In this section we will be looking at a proof of Burnside's lemma; the proof presented closely follows the proof found on the Wolfram page on Burnside's lemma \cite{weisstein}.
+
+    Let $G$ be a finite group that acts on the set $X$. Earlier we mentioned that $X^g$ and $G_x$ almost complementary, and there is a good reason for this. We know that
+    :
+    \begin{align*}
+        \sum_{g \in G} \lvert {X^g} \rvert &= \sum_{g \in G} \lvert \{x \in X : gx = x\} \rvert\\
+        \sum_{x \in X} \lvert {G_x} \rvert &= \sum_{x \in X} \lvert \{g \in G : gx = x\} \rvert
+    \end{align*}
+    
+    Its not hard to see that these are the same sums over different indices which means
+    
+    \begin{equation*}
+        \frac{1}{\lvert G \rvert} \sum_{g \in G} \lvert {X^g} \rvert = \frac{1}{\lvert G \rvert} \sum_{x \in X} \lvert {G_x} \rvert
+    \end{equation*}
+    
+    Using the orbit stabilizer theorem we get
+    
+    \begin{equation*}
+        \begin{split}
+            \frac{1}{\lvert G \rvert} \sum_{g \in G} \lvert {X^g} \rvert & = \frac{1}{\lvert G \rvert} \sum_{x \in X}  \frac{\lvert G \rvert}{\lvert Orb(x) \rvert} \\
+        & = \sum_{x \in X}  \frac{1}{\lvert Orb(x) \rvert}
+        \end{split}
+    \end{equation*}
+    
+    Since no $x \in X$ can be in more than one orbit, and the orbit of $x$ can't be empty we find that $X$ is the disjoint union of all its orbits denoted $X/G$. With this in mind we can break the sum into the following:
+    
+    \begin{equation*}
+        \begin{split}
+            \sum_{x \in X}  \frac{1}{\lvert Orb(x) \rvert} & = \sum_{Orb(x) \in X/G} \left( \sum_{x \in Orb(x)} \frac{1}{\lvert Orb(x) \rvert} \right) \\
+        & = \sum_{Orb(x) \in X/G} {1} \\
+        & = \lvert X/G \rvert
+        \end{split}
+    \end{equation*}
+    
+    We've arrived at Burnside's lemma.
+    
+    \begin{equation*}
+        \frac{1}{\lvert G \rvert} \sum_{g \in G} \lvert {X^g} \rvert = \lvert X/G \rvert
+    \end{equation*}
+
+        
+
+
+    
+    
+\end{document}

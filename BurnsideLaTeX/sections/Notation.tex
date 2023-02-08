@@ -1,0 +1,41 @@
+\documentclass[../main.tex]{subfiles}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+    Upon researching this topic I have found that the notation used to discuss topics in this field vary, so in this section I will provide some definitions for the conventions I will be using.
+    
+    \textbf{Group Action}
+    
+    If $G$ is a group acting on a set $X$, then a group action is a group homomorphism $\phi$ from $G$ to the group of possible permutations of $X$ denoted $S(X)$.
+    \begin{equation*}
+    \phi: G \rightarrow S(X)
+    \end{equation*}
+    Rather than denoting the group action of some $g$ on an element $x$ as $\phi(g)(x)$ we will instead write $gx$.
+
+    \textbf{Orbit}
+
+    \begin{equation*}
+    Orb(x) := \{gx:g \in G\}
+    \end{equation*}
+
+    \textbf{Fixed point}
+    
+    if an element if $G$ is a group acting on a set $X$ and we have that $gx = x$ then we say that $x$ is a fixed point of $g$ or that $g$ fixes $x$.
+
+    \textbf{Stabilizer}
+    
+    The stabilizer of an element $x \in X$ is the subgroup of $G$ that fixes $x$. The notation and formula are are as follows:
+    \begin{equation*}
+    G_x := \{g \in G: gx = x\}
+    \end{equation*}
+    
+    \textbf{Fix of A Group Element}
+    The fix of a group element $g \in G$ is the set of elements in $X$ that are a fixed by $g$. In someways this can be thought of as the complement of a stabilizer and the following notation is reflective of this.
+    \begin{equation*}
+    X^g := \{x \in X: gx = x\}
+    \end{equation*}
+    
+    
+    
+\end{document}

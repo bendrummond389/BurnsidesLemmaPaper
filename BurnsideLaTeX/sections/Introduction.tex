@@ -1,0 +1,21 @@
+\documentclass[../main.tex]{subfiles}
+\setlength{\parskip}{1.5em}
+
+\begin{document}
+    In this exposition we will be exploring Burnside's lemma along with some related theories and consequences of Burnside's lemma. We will also investigate some applications of Burnside's lemma and solve some examples.
+    
+    Despite its name Burnside's lemma was not discovered by Burnside, and was known by Cauchy in 1945. Burnside included the formula and a subsequent proof in his book ``Theory of Groups of Finite Order" and attributed it to Frobenius, as a result the lemma is sometimes referred to as ``the lemma that is not Burnside's".
+    
+    Burnside's lemma is a method of counting the number of orbits of a group acting on a finite set, and in plain English it states that the number of orbits is equal to the average number of fixed points of the group. In mathematical notation Burnside's lemma is defined by the equation.
+    
+    \begin{equation*}
+        \lvert X / G \rvert = \frac{1}{\lvert G \rvert} \sum_{g \in G} \lvert X^g \rvert
+    \end{equation*}
+    
+    Where $G$ is a group acting on a finite set $X$, with $ \lvert X/G \rvert $ denoting the number of orbits and $X^g$ denoting the set of points in $X$ that are fixed by $g$.
+
+    You'll see in the examples later on that by using Burnside's lemma we are able to account for symmetry when counting objects. This is because any two elements that are symmetrical are contained in the same orbit and thus the number of orbits is equal to the number of rotationally unique elements.
+
+    Before we can dive into the proof of Burnside's lemma and its applications we will first look at the orbit-stabilizer theorem as it will be used in the proof of Burnside's lemma and in the our examples.
+    
+\end{document}
